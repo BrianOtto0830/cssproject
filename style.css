@@ -1,0 +1,726 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F4F4F4;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    padding: 10px 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.buttonheader {
+    background-color: #FFC107;
+    padding: 10px 20px;
+    color: #333333;
+    border-radius: 10px;
+    font-size: 16pt;
+    border: none;
+}
+
+.buttonjelajah {
+    background-color: #333333;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* Background container styling */
+.background-container {
+    position: relative;
+    min-height: 600px; 
+    background-image: url('assets/aerial-shot-sea-waves-seashore-during-daytime.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+}
+
+
+/* Overlay styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1; 
+}
+
+/* Content container styling */
+.content-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2; 
+    color: white;
+    width: 100%;
+    max-width: 1200px; 
+    margin: auto; 
+}
+
+
+/* Text content styling */
+.text-content {
+    max-width: 50%;
+    font-size: 18pt;
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+/* Image content styling */
+.image-content {
+    display: flex;
+    align-items: center;
+    max-width: 40%;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Frame */
+.frame {
+    background-color: #F4F4F4;
+    text-align: center;
+    font-size: 16pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Iframe */
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Partners Section */
+.partners {
+    text-align: center;
+    margin: 20px 0;
+    font-family: sans-serif;
+    font-size: 17pt;
+}
+
+.partners img {
+    max-width: 320px;
+    margin: 0 10px;
+    vertical-align: middle; 
+    display: inline-block;
+}
+
+/* Paket Pilihan Section */
+.fontpaketliburan{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 26pt;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.fontisipaket{
+    font-family: sans-serif;
+    font-size: 15pt;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+/* Container untuk box */
+.package-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/* Styling untuk setiap box */
+.package-box {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+/* Styling gambar di dalam box */
+.package-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Styling teks di dalam box */
+.package-box p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Styling tombol di dalam box */
+.package-box button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.fontdestinasi h2{
+    font-family: sans-serif;
+    font-size: 25pt;    
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.fontdestinasi p{
+    font-family: sans-serif;
+    font-size: 16pt;
+    text-align: center;
+    color: #7D6666;
+}
+
+/* Destinasi Details Section */
+.destination-details {
+    display: flex;
+    align-items: center;
+    margin: 100px 0;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.destination-details2 {
+    display: flex;
+    align-items: center;
+    margin: 100px 0;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+/* Gambar Destinasi */
+.destination-image {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.destination-image2 {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.destination-image img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.destination-image2 img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Teks Destinasi */
+.destination-text {
+    flex: 1;
+    margin-left: 100px;
+    margin-right: 20px;
+    margin-top: 40px;
+    width: 400px;
+    height: 200px;
+}
+
+.destination-text h2 {
+    
+    font-size: 24pt;
+    color: black;
+    font-family: sans-serif;
+}
+
+.destination-text p {
+    margin: 0;
+    font-size: 16pt;
+    color: black;
+    font-family: sans-serif;
+}
+
+.destination-text2 {
+    flex: 1;
+    margin-left: 100px;
+    margin-right: 20px;
+    margin-top: 40px;
+    width: 400px;
+    height: 200px;
+}
+
+.destination-text2 h2 {
+    
+    font-size: 24pt;
+    color: black;
+    font-family: sans-serif;
+}
+
+.destination-text2 p {
+    margin: 0;
+    font-size: 16pt;
+    color: black;
+    font-family: sans-serif;
+}
+
+.gallery {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.gallery h2 {
+    font-family: sans-serif;
+    font-size: 26pt;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.gallery-flex img {
+    width: calc(20% - 20px);
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+
+.fontblisstravel{
+    display: inline block;
+    font-family: sans-serif;
+    font-size: 17pt;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.gambarcentang{
+    display: inline-block;
+    font-size: 25pt;
+}
+
+
+.testimoni-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+}
+
+.testimoni-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: #F4F4F4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    max-width: 500px;
+    width: 200px;
+    height: 600px;
+    box-sizing: border-box;
+}
+
+/* Styling gambar di dalam box */
+.testimoni-box img {
+    margin-left: 110px;
+    margin-right: 110px;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 15px;
+    border-radius: 50%
+}
+
+/* Styling teks di dalam box */
+.testimoni-box p {
+    width: 300px;
+    text-align: center;
+    margin-left: 80px;
+    font-size: 25px;
+    line-height: 2;
+    font-family: sans-serif;
+    color: #666666;
+    
+}
+
+.fontfaq{
+    font-family: sans-serif;
+    font-size: 15pt;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.box-shadow {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 55%;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 60px;
+}
+  
+  
+    .box-shadow h2{
+    color: #FFC107;
+    font-size: 25pt;
+    margin-bottom: 15px;
+}
+
+    .box-shadow p{
+    font-size: 20pt;
+    color: #66667F;
+}
+
+    .mulaipetualangan{
+    background-color: #FFC107;
+    color: #333333;
+    padding: 30px;
+    text-align: center;
+}
+
+    .mulaipetualangan p{
+    font-size: 16pt;
+    margin-top: 20px;
+}
+
+    .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+    .footer-item {
+    flex: 1 1 10%;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+    .footer-item h2{
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 25pt;
+    color: #FFC107;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.footer-item p{
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16pt;
+    line-height: 1.5;
+    color: #e6ded1;
+    text-align: center;
+}
+
+.mediasosial{
+    text-align: center;
+    font-size: 30pt;
+    padding-top: 20px;
+}
+
+.tombolfooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC107;
+    padding: 10px;
+    color: #333333;
+    border-radius: 10px;
+    font-size: 16pt;
+    margin-top: 30px;
+    margin-left: 50px;
+    
+}
+
+.garis{
+    border: none;
+    height: 1px;
+}
+
+.footerakhir{
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    font-size: 12pt;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .buttonheader {
+        font-size: 14pt;
+        padding: 8px 16px;
+    }
+
+    .background-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .content-container {
+        flex-flow: column-reverse;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .text-content {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-content {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .image-content img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .video-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .video-container iframe {
+        width: 80%;
+        height: 450px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .partners {
+        flex-direction: column;
+    }
+    .partners h2 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .partners img {
+        max-width: 200px;
+        padding-top: 20px;
+    }
+
+    .package-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package-box {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    
+    .destination-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .fontdestinasi{
+        display: block;
+        text-align: center;
+        padding-bottom: 80px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 60px;
+        width: 90%;
+    }
+
+    .destination-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .destination-text {
+        width: 90%;
+        max-width: 700px;
+        margin-right: 70px;
+        order: -1;
+        margin-bottom: 20px;
+        
+    }
+
+    .destination-image {
+        
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+
+    .destination-details2 {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .destination-text2 {
+        width: 90%;
+        max-width: 100%;
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .destination-image2 {
+        width: auto;
+        height: auto;
+        margin-right: 5px;
+        margin: 0;
+        display: block;
+    }
+
+    .gallery-flex img {
+        width: calc(50% - 60px);
+    }
+
+    .fontblisstravel {
+        font-size:18pt;
+        text-align: left; 
+        margin: 0 20px; 
+        padding: 20px; 
+        max-width: 90%;
+    }
+    
+    .testimoni-container {
+        flex-direction: column; 
+        align-items: center; 
+        padding-left: 0; 
+        padding-right: 0;
+    }
+
+    .testimoni-box {
+        margin: 5px 0; 
+        width: 100%; 
+        max-width: 500px; 
+        margin-bottom: 50px;
+    }
+
+
+    .testimoni-box img {
+        width: 50%; 
+        height: auto; 
+        margin: 0 auto; 
+    }
+
+
+    .box-shadow {
+        padding: 15px; 
+        margin: 15px auto;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-item {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+    
+}
